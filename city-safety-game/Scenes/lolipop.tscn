@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7etb45wph71g"]
+
+[ext_resource type="Texture2D" uid="uid://dh0up1bfxm0uj" path="res://assets/Food/FOOD.png" id="1_8i7ej"]
+[ext_resource type="Script" uid="uid://cdrcuvhfe1mic" path="res://Scripts/lolipop.gd" id="1_uxy8c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxy8c"]
+atlas = ExtResource("1_8i7ej")
+region = Rect2(182, 650, 26, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1b7od"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxy8c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_561km"]
+radius = 9.0
+height = 26.0
+
+[node name="lolipop" type="Area2D"]
+script = ExtResource("1_uxy8c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1b7od")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CapsuleShape2D_561km")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

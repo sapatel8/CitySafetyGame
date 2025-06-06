@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://bn2eqr1keuk47"]
+
+[ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_mc5mp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mc5mp"]
+atlas = ExtResource("1_mc5mp")
+region = Rect2(269, 262, 22, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwli8"]
+atlas = ExtResource("1_mc5mp")
+region = Rect2(243, 262, 27, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6a6n"]
+atlas = ExtResource("1_mc5mp")
+region = Rect2(293, 262, 22, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rv5nh"]
+atlas = ExtResource("1_mc5mp")
+region = Rect2(316, 262, 22, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7kdl7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mc5mp")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwli8")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6a6n")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rv5nh")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6n8la"]
+size = Vector2(14, 21)
+
+[node name="red car" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7kdl7")
+animation = &"down"
+autoplay = "left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_6n8la")
