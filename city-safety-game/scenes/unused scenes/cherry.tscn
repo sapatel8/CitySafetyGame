@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bpgtuiccsj6m4"]
 
-[ext_resource type="Script" uid="uid://cp47mlfh3xqol" path="res://Scripts/cherry.gd" id="1_ea3nj"]
+[ext_resource type="Script" uid="uid://cp47mlfh3xqol" path="res://Scripts/unused scripts/cherry.gd" id="1_ea3nj"]
 [ext_resource type="Texture2D" uid="uid://dh0up1bfxm0uj" path="res://assets/Food/FOOD.png" id="1_h60d7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ea3nj"]

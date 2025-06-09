@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c3ejvid2qjns7"]
+[gd_scene load_steps=16 format=3 uid="uid://c3ejvid2qjns7"]
 
 [ext_resource type="Script" uid="uid://b5jrq8ttyfgml" path="res://scripts/stranger.gd" id="1_kdpdp"]
 [ext_resource type="Texture2D" uid="uid://csknib4urhsdt" path="res://assets/City Layout/Tiles/tile_0347.png" id="1_xeewo"]
@@ -13,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://bkuvsifsjt8qn" path="res://assets/City Layout/Tiles/tile_0404.png" id="11_egcih"]
 [ext_resource type="Texture2D" uid="uid://b2fbw4fvnj027" path="res://assets/City Layout/Tiles/tile_0376.png" id="12_127ex"]
 [ext_resource type="Texture2D" uid="uid://dxh6heb0813oc" path="res://assets/City Layout/Tiles/tile_0403.png" id="13_m15rp"]
-[ext_resource type="PackedScene" uid="uid://d4xassdeglhd" path="res://scenes/killzone.tscn" id="14_nia5b"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m0c2h"]
 animations = [{
@@ -109,25 +108,17 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_xeewo"]
 radius = 6.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_nia5b"]
-radius = 6.0
-
 [node name="Stranger" type="Area2D"]
+collision_mask = 2
 script = ExtResource("1_kdpdp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_m0c2h")
-animation = &"walking_up"
+animation = &"idle_left"
 autoplay = "walking_left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_xeewo")
-
-[node name="Killzone" parent="." instance=ExtResource("14_nia5b")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0, 3)
-shape = SubResource("CircleShape2D_nia5b")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

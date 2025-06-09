@@ -35,3 +35,8 @@ func play_idle_animation(direction):
 		player.play("idle_up")
 	elif idle_direction.y > 0: 
 		player.play("idle_down")
+		
+		
+func bump_back(from_direction: Vector2):
+	var bump_force = 20  
+	position += from_direction.normalized() * bump_force

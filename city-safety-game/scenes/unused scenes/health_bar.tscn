@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://dxq7csqcug4lo"]
 
 [ext_resource type="Texture2D" uid="uid://g2o01yvftevy" path="res://assets/Health Bar/Health bar15_[full].png" id="1_78m4n"]
-[ext_resource type="Script" uid="uid://cvgxfesxcqbpa" path="res://Scripts/health_bar.gd" id="1_m34ix"]
+[ext_resource type="Script" uid="uid://cvgxfesxcqbpa" path="res://Scripts/unused scripts/health_bar.gd" id="1_m34ix"]
 [ext_resource type="Texture2D" uid="uid://jelkwsfse02q" path="res://assets/Health Bar/Health bar0_[empty].png" id="2_fmjij"]
 [ext_resource type="Texture2D" uid="uid://gqm0hw4jqcal" path="res://assets/Health Bar/Health bar1.png" id="3_i3yb7"]
 [ext_resource type="Texture2D" uid="uid://bo8ib4xblul1y" path="res://assets/Health Bar/Health bar2.png" id="4_bl7b7"]
@@ -75,16 +75,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wjrfg"]
-size = Vector2(376, 72)
+size = Vector2(48, 9)
 
 [node name="health bar" type="Area2D"]
+position = Vector2(-1, 0)
 script = ExtResource("1_m34ix")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -4.76837e-07)
+scale = Vector2(0.127049, 0.127049)
 sprite_frames = SubResource("SpriteFrames_qay8w")
 frame = 15
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-8, 0)
 shape = SubResource("RectangleShape2D_wjrfg")
