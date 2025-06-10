@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmjpg5ys3gk1x"]
+
+[ext_resource type="Script" uid="uid://ca50h4nfnhch1" path="res://scripts/options_screen.gd" id="1_8c6mt"]
+[ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="1_ffprp"]
+
+[node name="options screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8c6mt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(130, 40)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.444
+anchor_top = 0.795
+anchor_right = 0.557
+anchor_bottom = 1.0
+offset_left = 0.511963
+offset_top = -0.160034
+offset_right = 0.335938
+offset_bottom = -93.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.80069, 0.549533, 0.146247, 1)
+theme_override_fonts/font = ExtResource("1_ffprp")
+theme_override_font_sizes/font_size = 16
+text = "Back"
+
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

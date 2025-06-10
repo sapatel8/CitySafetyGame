@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=4 uid="uid://c35rqcd45nqhf"]
+[gd_scene load_steps=8 format=4 uid="uid://ni0o2s5hit8r"]
 
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_o5qli"]
-[ext_resource type="PackedScene" uid="uid://dtsn2o4ij2rnf" path="res://scenes/player.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://dogcyetcb3aeb" path="res://scenes/pause_menu.tscn" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://bkbqpay40pakx" path="res://scenes/player.tscn" id="2_0wfyh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
 texture = ExtResource("1_o5qli")
@@ -1210,6 +1211,18 @@ z_index = 5
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
+
+[node name="PauseMenu" parent="Player/Camera2D" instance=ExtResource("1_sugp2")]
+z_index = 4
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.0
+offset_top = -26.0
+offset_right = -51.0
+offset_bottom = -26.0
 
 [node name="Node" type="Node" parent="."]
 
