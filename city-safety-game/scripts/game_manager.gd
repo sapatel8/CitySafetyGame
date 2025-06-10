@@ -5,6 +5,7 @@ var score = 0
 @onready var score_label: Label = %scoreLabel
 @onready var alert: Label = %Alert
 @onready var camera_2d: Camera2D = $Player/Camera2D
+@onready var pause_menu: Control = $"../Player/Camera2D2/PauseMenu"
 
 var paused = false
 

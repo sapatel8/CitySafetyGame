@@ -1,6 +1,6 @@
 extends Control
 
-@onready var gameManager = $"../../../"
+@onready var gameManager: Node = $"../../../Game Manager"
 
 func _on_resume_pressed() -> void:
 	gameManager.pauseMenu()
