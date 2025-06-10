@@ -1,13 +1,13 @@
 extends Node
 
 var score = 0
-@onready var timer: Timer = %Timer
-@onready var score_label: Label = %scoreLabel
-@onready var alert: Label = %Alert
-@onready var camera_2d: Camera2D = $Player/Camera2D
-@onready var pause_menu: Control = $"../Player/Camera2D2/PauseMenu"
-
 var paused = false
+var current_level := -1
+var level = 0
+@onready var timer: Timer = $Timer
+@onready var score_label: Label = %"score label"
+@onready var alert: Label = %alert
+@onready var pause_menu: Control = %PauseMenu
 
 func add_point(): 
 	score += 1

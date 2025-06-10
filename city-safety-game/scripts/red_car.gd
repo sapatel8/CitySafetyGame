@@ -7,9 +7,9 @@ var idle_direction: Vector2 = Vector2.RIGHT
 
 @onready var red_car: AnimatedSprite2D = $AnimatedSprite2D
 @onready var audio: AudioStreamPlayer2D = $AudioStreamPlayer2D
-@onready var game_manager: Node = $"../Game Manager"
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var game_manager: Node = %GameManager
 
 func _on_body_entered(body: Node2D) -> void:
 	print("Watch for cars! (red)")

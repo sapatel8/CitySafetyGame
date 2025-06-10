@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=4 uid="uid://c0tiekija2kgc"]
+[gd_scene load_steps=8 format=4 uid="uid://dgyhvkrnthjci"]
 
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_4038r"]
-[ext_resource type="PackedScene" uid="uid://d1tyr5e67cwdc" path="res://scenes/next.tscn" id="3_4038r"]
+[ext_resource type="PackedScene" uid="uid://bkpuayby5bh2e" path="res://scenes/next.tscn" id="3_4038r"]
 [ext_resource type="PackedScene" uid="uid://dtsn2o4ij2rnf" path="res://scenes/player.tscn" id="3_alqfr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
@@ -1209,6 +1209,9 @@ sources/1 = SubResource("TileSetAtlasSource_0wfyh")
 [node name="Player" parent="." instance=ExtResource("3_alqfr")]
 z_index = 5
 
+[node name="Next" parent="." instance=ExtResource("3_4038r")]
+position = Vector2(327, -139)
+
 [node name="Node" type="Node" parent="."]
 
 [node name="Background" type="TileMapLayer" parent="Node"]
@@ -1219,6 +1222,3 @@ tile_set = SubResource("TileSet_sugp2")
 z_index = 1
 tile_map_data = PackedByteArray("AAASAPX/AQAQAAgAAAASAPb/AQAQAAkAAAATAOr/AQAMAAwAAAATAOz/AQAMAAwAAAATAO7/AQAMAAwAAAATAPD/AQAMAAwAAAATAPL/AQAMAAwAAAATAPT/AQAMAAwAAAATAPX/AQAQAAgAAAATAPb/AQAQAAkAAAAVAOr/AQAMAAwAAAAVAOz/AQAMAAwAAAAVAO7/AQAMAAwAAAAVAPD/AQAMAAwAAAAVAPL/AQAMAAwAAAAVAPT/AQAMAAwAAAAVAPX/AQAQAAgAAAAVAPb/AQAQAAkAAAAWAPX/AQAQAAgAAAAWAPb/AQAQAAkAAAA=")
 tile_set = SubResource("TileSet_jyhfs")
-
-[node name="Next" parent="." instance=ExtResource("3_4038r")]
-position = Vector2(327, -139)

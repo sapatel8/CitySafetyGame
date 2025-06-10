@@ -3,11 +3,14 @@
 [ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="1_5p55f"]
 [ext_resource type="Script" uid="uid://wqxerjp6dbch" path="res://scripts/control.gd" id="1_r67kn"]
 
-[node name="Control" type="Control"]
+[node name="MainMenu" type="Control"]
 layout_mode = 3
-anchors_preset = 15
+anchor_left = 0.014
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -16.128
+offset_top = 8.0
+offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_r67kn")
@@ -24,8 +27,6 @@ offset_left = 187.648
 offset_top = 2.23196
 offset_right = -127.744
 offset_bottom = -58.0
-grow_horizontal = 2
-grow_vertical = 0
 theme_override_constants/separation = 4
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
@@ -70,7 +71,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.364706, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.105882, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_5p55f")
-theme_override_font_sizes/font_size = 96
+theme_override_font_sizes/font_size = 88
 text = "Stranger
 Danger"
 horizontal_alignment = 1

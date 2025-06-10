@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://yo6qob611ylq"]
+[gd_scene load_steps=9 format=4 uid="uid://cniy0h3yghiq"]
 
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_16pka"]
 [ext_resource type="PackedScene" uid="uid://c3ejvid2qjns7" path="res://scenes/stranger.tscn" id="2_j8bo8"]
