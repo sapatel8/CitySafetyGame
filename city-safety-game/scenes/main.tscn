@@ -540,6 +540,21 @@ _data = {
 &"left_to_right": SubResource("Animation_sugp2")
 }
 
+[sub_resource type="Animation" id="Animation_hptm8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(77, -49)]
+}
+
 [sub_resource type="Animation" id="Animation_ynf5e"]
 resource_name = "moving"
 length = 1.5
@@ -556,7 +571,13 @@ tracks/0/keys = {
 "values": [Vector2(77, -49), Vector2(77, 32)]
 }
 
-[sub_resource type="Animation" id="Animation_hptm8"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d1ilt"]
+_data = {
+&"RESET": SubResource("Animation_hptm8"),
+&"moving": SubResource("Animation_ynf5e")
+}
+
+[sub_resource type="Animation" id="Animation_jkdf5"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -568,13 +589,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(77, -49)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_d1ilt"]
-_data = {
-&"RESET": SubResource("Animation_hptm8"),
-&"moving": SubResource("Animation_ynf5e")
+"values": [Vector2(-65, -61)]
 }
 
 [sub_resource type="Animation" id="Animation_fdnlq"]
@@ -593,7 +608,13 @@ tracks/0/keys = {
 "values": [Vector2(-65, -61), Vector2(128, -62)]
 }
 
-[sub_resource type="Animation" id="Animation_jkdf5"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wsu2k"]
+_data = {
+&"RESET": SubResource("Animation_jkdf5"),
+&"moving": SubResource("Animation_fdnlq")
+}
+
+[sub_resource type="Animation" id="Animation_6iyac"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -605,13 +626,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-65, -61)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_wsu2k"]
-_data = {
-&"RESET": SubResource("Animation_jkdf5"),
-&"moving": SubResource("Animation_fdnlq")
+"values": [Vector2(100, 35)]
 }
 
 [sub_resource type="Animation" id="Animation_d1ilt"]
@@ -628,21 +643,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(100, 35), Vector2(100, -5), Vector2(100, -5), Vector2(100, -46), Vector2(99, -83), Vector2(-67, -85)]
-}
-
-[sub_resource type="Animation" id="Animation_6iyac"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(100, 35)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fdnlq"]
