@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bd26vxvtlkjp8"]
 
-[ext_resource type="Script" uid="uid://dltk8yo3c8gxf" path="res://Scripts/milk.gd" id="1_4r4fw"]
+[ext_resource type="Script" uid="uid://dltk8yo3c8gxf" path="res://Scripts/unused scripts/milk.gd" id="1_4r4fw"]
 [ext_resource type="Texture2D" uid="uid://dh0up1bfxm0uj" path="res://assets/Food/FOOD.png" id="1_sj35g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4r4fw"]

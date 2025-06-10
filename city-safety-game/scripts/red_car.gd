@@ -4,15 +4,20 @@ var speed: int = 100
 var previous_position: Vector2
 var direction: Vector2 = Vector2.ZERO
 var idle_direction: Vector2 = Vector2.RIGHT
-@onready var stranger: AnimatedSprite2D = $AnimatedSprite2D
+
+@onready var red_car: AnimatedSprite2D = $AnimatedSprite2D
+@onready var audio: AudioStreamPlayer2D = $AudioStreamPlayer2D
 @onready var game_manager: Node = %GameManager
+@onready var timer: Timer = $Timer
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _on_body_entered(body: Node2D) -> void:
-	print("Stranger Danger!")
-	game_manager.stranger_alert()
-
-func _ready():
-	previous_position = position
+	print("Watch for cars! (red)")
+	game_manager.car_alert()
+	audio.play()
+	body.bump_back(global_position.direction_to(body.global_position))
+	animation_player.pause()
+	timer.start()
 
 func _physics_process(delta: float) -> void:
 	# Detect actual movement direction based on position delta
@@ -32,33 +37,37 @@ func play_walking_animation(dir: Vector2) -> void:
 	if abs(dir.x) > abs(dir.y):
 		# If character is moving right
 		if dir.x > 0:
-			stranger.play("walking_right")
+			red_car.play("right")
 		# If character is moving left
 		else:
-			stranger.play("walking_left")
+			red_car.play("left")
 	# If vertical movement of character is dominant
 	else:
 		# If character is moving upwards
 		if dir.y < 0:
-			stranger.play("walking_up")
+			red_car.play("up")
 		# If character is moving downwards
 		else:
-			stranger.play("walking_down")
+			red_car.play("down")
 
 func play_idle_animation(dir: Vector2) -> void:
 	# If horizontal movement of character is dominant
 	if abs(dir.x) > abs(dir.y):
 		# If character is moving right
 		if dir.x > 0:
-			stranger.play("idle_right")
+			red_car.play("right")
 		# If character is moving left
 		else:
-			stranger.play("idle_left")
+			red_car.play("left")
 	# If vertical movement of character is dominant
 	else:
 		# If character is moving upwards
 		if dir.y < 0:
-			stranger.play("idle_up")
+			red_car.play("up")
 		# If character is moving downwards
 		else:
-			stranger.play("idle_down")
+			red_car.play("down")
+
+
+func _on_timer_timeout() -> void:
+	animation_player.play()
