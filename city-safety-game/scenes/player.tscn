@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bkbqpay40pakx"]
+[gd_scene load_steps=16 format=3 uid="uid://dtsn2o4ij2rnf"]
 
 [ext_resource type="Texture2D" uid="uid://dacqo6f4a11pf" path="res://assets/City Layout/Tiles/tile_0429.png" id="1_3v2ag"]
 [ext_resource type="Texture2D" uid="uid://cp6hcm2p5l5av" path="res://assets/City Layout/Tiles/tile_0485.png" id="1_3vyb7"]
@@ -109,8 +109,9 @@ animations = [{
 radius = 6.0
 height = 16.0
 
-[node name="Player" type="CharacterBody2D"]
-collision_layer = 2
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+z_index = 1
+collision_layer = 3
 script = ExtResource("1_jej6c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -122,3 +123,24 @@ autoplay = "idle_right"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_ukyrk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="Alert" type="Label" parent="."]
+z_index = 1
+offset_left = -140.0
+offset_top = 59.0
+offset_right = -84.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 15
+
+[node name="Score Label" type="Label" parent="."]
+z_index = 1
+offset_left = -141.0
+offset_top = 39.0
+offset_right = -80.0
+offset_bottom = 61.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 15

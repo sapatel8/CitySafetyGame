@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://s8xoekb1nana"]
 
-[ext_resource type="Script" uid="uid://bevhjwpxc8uav" path="res://scripts/green_car.gd" id="1_0rgf7"]
+[ext_resource type="Script" path="res://scripts/green_car.gd" id="1_0rgf7"]
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_eyu5w"]
 [ext_resource type="AudioStream" uid="uid://bjnpc5jvisfwh" path="res://assets/sounds/car-horn-beep-beep-two-beeps-honk-honk-6188.mp3" id="3_sftcl"]
 
@@ -59,6 +59,7 @@ animations = [{
 size = Vector2(16, 21)
 
 [node name="green car" type="Area2D"]
+z_index = 1
 collision_mask = 2
 script = ExtResource("1_0rgf7")
 

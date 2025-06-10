@@ -1,9 +1,9 @@
 extends Node
 
 var score = 0
-@onready var timer: Timer = %Timer
-@onready var score_label: Label = %scoreLabel
-@onready var alert: Label = %Alert
+@onready var timer: Timer = $Timer
+@onready var score_label: Label = $"../Player/Score Label"
+@onready var alert: Label = $"../Player/Alert"
 
 func add_point(): 
 	score += 1
