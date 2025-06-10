@@ -123,24 +123,3 @@ autoplay = "idle_right"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_ukyrk")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
-
-[node name="Alert" type="Label" parent="."]
-z_index = 1
-offset_left = -140.0
-offset_top = 59.0
-offset_right = -84.0
-offset_bottom = 81.0
-theme_override_font_sizes/font_size = 15
-
-[node name="Score Label" type="Label" parent="."]
-z_index = 1
-offset_left = -141.0
-offset_top = 39.0
-offset_right = -80.0
-offset_bottom = 61.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_font_sizes/font_size = 15
