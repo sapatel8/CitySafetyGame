@@ -1,12 +1,13 @@
 extends Node
 
 var score = 0
-@onready var timer: Timer = $Timer
-@onready var score_label: Label = $"../Player/ScoreLabel"
-@onready var alert: Label = $"../Player/Alert"
-@onready var camera_2d: Camera2D = $"../Player/Camera2D"
-
 var paused = false
+var current_level := -1
+var level = 0
+@onready var timer: Timer = $Timer
+@onready var score_label: Label = %"score label"
+@onready var alert: Label = %alert
+@onready var pause_menu: Control = %PauseMenu
 
 func add_point(): 
 	score += 1
@@ -30,3 +31,17 @@ func road_alert():
 	
 func _on_timer_timeout() -> void:
 	alert.text = ""
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("pause"):
+		pauseMenu()
+		
+func pauseMenu():
+	if paused:
+		pause_menu.hide()
+		Engine.time_scale = 1
+	else:
+		pause_menu.show()
+		Engine.time_scale = 0
+		
+	paused = !paused
