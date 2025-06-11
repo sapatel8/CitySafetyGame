@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://e7jrf5p6sd8u"]
+[gd_scene load_steps=12 format=4 uid="uid://yo6qob611ylq"]
 
 [ext_resource type="Script" uid="uid://j1qu1etjqpuo" path="res://scripts/game_manager.gd" id="1_fkit3"]
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_jfeem"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://cb0nipb6i6xa7"]
+[gd_scene load_steps=45 format=4 uid="uid://lhd0wf1lc4tt"]
 
 [ext_resource type="PackedScene" uid="uid://dtsn2o4ij2rnf" path="res://scenes/player.tscn" id="1_u23xw"]
 [ext_resource type="Script" uid="uid://j1qu1etjqpuo" path="res://scripts/game_manager.gd" id="1_vxn4p"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dogcyetcb3aeb" path="res://scenes/pause_menu.tscn" id="4_q6sfj"]
 [ext_resource type="PackedScene" uid="uid://dmmew0htxs5ah" path="res://scenes/apple.tscn" id="4_vxn4p"]
 [ext_resource type="PackedScene" uid="uid://d4xassdeglhd" path="res://scenes/killzone.tscn" id="8_5cjb5"]
-[ext_resource type="PackedScene" uid="uid://lis4noq0aeip" path="res://scenes/world_boundary.tscn" id="9_q6sfj"]
+[ext_resource type="PackedScene" path="res://scenes/world_boundary.tscn" id="9_q6sfj"]
 [ext_resource type="PackedScene" uid="uid://s8xoekb1nana" path="res://scenes/green_car.tscn" id="10_g1xgd"]
 [ext_resource type="PackedScene" uid="uid://caj7l4y6i8baw" path="res://scenes/yellow_car.tscn" id="11_3n7tn"]
 [ext_resource type="PackedScene" uid="uid://bn2eqr1keuk47" path="res://scenes/red_car.tscn" id="12_8f67t"]
@@ -119,21 +119,37 @@ texture = ExtResource("2_kq3r6")
 25:2/0 = 0
 26:2/0 = 0
 0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:3/0 = 0
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:3/0 = 0
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:3/0 = 0
+13:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:3/0 = 0
+14:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:3/0 = 0
+15:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 16:3/0 = 0
 16:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 17:3/0 = 0
@@ -153,21 +169,37 @@ texture = ExtResource("2_kq3r6")
 25:3/0 = 0
 26:3/0 = 0
 0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:4/0 = 0
+10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:4/0 = 0
+11:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:4/0 = 0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:4/0 = 0
+13:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 16:4/0 = 0
 16:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 17:4/0 = 0
@@ -187,21 +219,37 @@ texture = ExtResource("2_kq3r6")
 25:4/0 = 0
 26:4/0 = 0
 0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:5/0 = 0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:5/0 = 0
+9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:5/0 = 0
+10:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:5/0 = 0
+11:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:5/0 = 0
+12:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:5/0 = 0
+13:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:5/0 = 0
+14:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:5/0 = 0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 16:5/0 = 0
 16:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 17:5/0 = 0
@@ -1241,6 +1289,21 @@ size = Vector2(59, 669.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2vnbt"]
 size = Vector2(65.5, 662.5)
 
+[sub_resource type="Animation" id="Animation_ivevn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(724, 60)]
+}
+
 [sub_resource type="Animation" id="Animation_ekyvo"]
 resource_name = "driving"
 length = 3.0
@@ -1258,7 +1321,13 @@ tracks/0/keys = {
 "values": [Vector2(724, 60), Vector2(-81, 60)]
 }
 
-[sub_resource type="Animation" id="Animation_ivevn"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j8vkp"]
+_data = {
+&"RESET": SubResource("Animation_ivevn"),
+&"driving": SubResource("Animation_ekyvo")
+}
+
+[sub_resource type="Animation" id="Animation_cev7d"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1270,13 +1339,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(724, 60)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_j8vkp"]
-_data = {
-&"RESET": SubResource("Animation_ivevn"),
-&"driving": SubResource("Animation_ekyvo")
+"values": [Vector2(-81, 162)]
 }
 
 [sub_resource type="Animation" id="Animation_oykdx"]
@@ -1296,7 +1359,13 @@ tracks/0/keys = {
 "values": [Vector2(-81, 162), Vector2(200, 162), Vector2(200, 82), Vector2(569, 84), Vector2(569, 162), Vector2(721, 163)]
 }
 
-[sub_resource type="Animation" id="Animation_cev7d"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xtaj5"]
+_data = {
+&"RESET": SubResource("Animation_cev7d"),
+&"driving": SubResource("Animation_oykdx")
+}
+
+[sub_resource type="Animation" id="Animation_la4bi"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1308,13 +1377,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-81, 162)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_xtaj5"]
-_data = {
-&"RESET": SubResource("Animation_cev7d"),
-&"driving": SubResource("Animation_oykdx")
+"values": [Vector2(385, 321)]
 }
 
 [sub_resource type="Animation" id="Animation_m8ews"]
@@ -1334,7 +1397,13 @@ tracks/0/keys = {
 "values": [Vector2(385, 321), Vector2(385, 306), Vector2(561, 306), Vector2(562, 136), Vector2(173, 136), Vector2(173, 321)]
 }
 
-[sub_resource type="Animation" id="Animation_la4bi"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o7eol"]
+_data = {
+&"RESET": SubResource("Animation_la4bi"),
+&"driving": SubResource("Animation_m8ews")
+}
+
+[sub_resource type="Animation" id="Animation_ih1td"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1346,13 +1415,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(385, 321)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_o7eol"]
-_data = {
-&"RESET": SubResource("Animation_la4bi"),
-&"driving": SubResource("Animation_m8ews")
+"values": [Vector2(192, 321)]
 }
 
 [sub_resource type="Animation" id="Animation_bx2t0"]
@@ -1372,7 +1435,13 @@ tracks/0/keys = {
 "values": [Vector2(192, 321), Vector2(195, -264)]
 }
 
-[sub_resource type="Animation" id="Animation_ih1td"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6cil5"]
+_data = {
+&"RESET": SubResource("Animation_ih1td"),
+&"driving": SubResource("Animation_bx2t0")
+}
+
+[sub_resource type="Animation" id="Animation_sh1tq"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1384,13 +1453,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(192, 321)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_6cil5"]
-_data = {
-&"RESET": SubResource("Animation_ih1td"),
-&"driving": SubResource("Animation_bx2t0")
+"values": [Vector2(118, 192)]
 }
 
 [sub_resource type="Animation" id="Animation_x02yq"]
@@ -1410,7 +1473,13 @@ tracks/0/keys = {
 "values": [Vector2(149, 192), Vector2(27, 192), Vector2(24, 316)]
 }
 
-[sub_resource type="Animation" id="Animation_sh1tq"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xu66h"]
+_data = {
+&"RESET": SubResource("Animation_sh1tq"),
+&"walking": SubResource("Animation_x02yq")
+}
+
+[sub_resource type="Animation" id="Animation_nso2f"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1422,13 +1491,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(118, 192)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_xu66h"]
-_data = {
-&"RESET": SubResource("Animation_sh1tq"),
-&"walking": SubResource("Animation_x02yq")
+"values": [Vector2(605, 251)]
 }
 
 [sub_resource type="Animation" id="Animation_ig6gj"]
@@ -1446,21 +1509,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(595, 251), Vector2(721, 251), Vector2(721, 192), Vector2(595, 192), Vector2(595, 251)]
-}
-
-[sub_resource type="Animation" id="Animation_nso2f"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(605, 251)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sai06"]
