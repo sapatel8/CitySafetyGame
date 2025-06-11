@@ -5,7 +5,7 @@ var previous_position: Vector2
 var direction: Vector2 = Vector2.ZERO
 var idle_direction: Vector2 = Vector2.RIGHT
 @onready var stranger: AnimatedSprite2D = $AnimatedSprite2D
-@onready var game_manager: Node = $"../Game Manager"
+@onready var game_manager: Node = %GameManager
 
 func _on_body_entered(body: Node2D) -> void:
 	print("Stranger Danger!")
