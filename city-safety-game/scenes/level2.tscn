@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://c0tiekija2kgc"]
+[gd_scene load_steps=29 format=4 uid="uid://dgyhvkrnthjci"]
 
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_4038r"]
 [ext_resource type="Script" uid="uid://j1qu1etjqpuo" path="res://scripts/game_manager.gd" id="1_alqfr"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dtsn2o4ij2rnf" path="res://scenes/player.tscn" id="3_alqfr"]
 [ext_resource type="PackedScene" uid="uid://dogcyetcb3aeb" path="res://scenes/pause_menu.tscn" id="4_hrcei"]
 [ext_resource type="PackedScene" uid="uid://d4xassdeglhd" path="res://scenes/killzone.tscn" id="8_hrcei"]
-[ext_resource type="PackedScene" path="res://scenes/world_boundary.tscn" id="9_xa7n4"]
+[ext_resource type="PackedScene" uid="uid://lis4noq0aeip" path="res://scenes/world_boundary.tscn" id="9_xa7n4"]
 [ext_resource type="PackedScene" uid="uid://bn2eqr1keuk47" path="res://scenes/red_car.tscn" id="10_76toy"]
 [ext_resource type="PackedScene" uid="uid://s8xoekb1nana" path="res://scenes/green_car.tscn" id="11_8g4ke"]
 

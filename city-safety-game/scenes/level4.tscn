@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://lhd0wf1lc4tt"]
+[gd_scene load_steps=45 format=4 uid="uid://cb0nipb6i6xa7"]
 
 [ext_resource type="PackedScene" uid="uid://dtsn2o4ij2rnf" path="res://scenes/player.tscn" id="1_u23xw"]
 [ext_resource type="Script" uid="uid://j1qu1etjqpuo" path="res://scripts/game_manager.gd" id="1_vxn4p"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dogcyetcb3aeb" path="res://scenes/pause_menu.tscn" id="4_q6sfj"]
 [ext_resource type="PackedScene" uid="uid://dmmew0htxs5ah" path="res://scenes/apple.tscn" id="4_vxn4p"]
 [ext_resource type="PackedScene" uid="uid://d4xassdeglhd" path="res://scenes/killzone.tscn" id="8_5cjb5"]
-[ext_resource type="PackedScene" path="res://scenes/world_boundary.tscn" id="9_q6sfj"]
+[ext_resource type="PackedScene" uid="uid://lis4noq0aeip" path="res://scenes/world_boundary.tscn" id="9_q6sfj"]
 [ext_resource type="PackedScene" uid="uid://s8xoekb1nana" path="res://scenes/green_car.tscn" id="10_g1xgd"]
 [ext_resource type="PackedScene" uid="uid://caj7l4y6i8baw" path="res://scenes/yellow_car.tscn" id="11_3n7tn"]
 [ext_resource type="PackedScene" uid="uid://bn2eqr1keuk47" path="res://scenes/red_car.tscn" id="12_8f67t"]

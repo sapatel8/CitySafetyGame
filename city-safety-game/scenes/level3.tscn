@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://bjhy01lyuik7s"]
+[gd_scene load_steps=31 format=4 uid="uid://cniy0h3yghiq"]
 
 [ext_resource type="Script" uid="uid://j1qu1etjqpuo" path="res://scripts/game_manager.gd" id="1_7uttt"]
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_16pka"]
@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://s8xoekb1nana" path="res://scenes/green_car.tscn" id="8_6qt4k"]
 [ext_resource type="PackedScene" uid="uid://bn2eqr1keuk47" path="res://scenes/red_car.tscn" id="9_fh4ka"]
 [ext_resource type="PackedScene" uid="uid://caj7l4y6i8baw" path="res://scenes/yellow_car.tscn" id="10_qewby"]
-[ext_resource type="PackedScene" path="res://scenes/world_boundary.tscn" id="11_fh4ka"]
+[ext_resource type="PackedScene" uid="uid://lis4noq0aeip" path="res://scenes/world_boundary.tscn" id="11_fh4ka"]
 [ext_resource type="PackedScene" uid="uid://d4xassdeglhd" path="res://scenes/killzone.tscn" id="12_qewby"]
 
 [sub_resource type="Animation" id="Animation_fh4ka"]
