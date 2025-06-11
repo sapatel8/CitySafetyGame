@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cq0f3uj3ie2pt"]
+[gd_scene load_steps=7 format=3 uid="uid://dyiyuspamgsgb"]
 
 [ext_resource type="Texture2D" uid="uid://cc16cy8foglt3" path="res://assets/8-bit-graphics-pixels-scene-with-police-office.jpg" id="1_5pmb2"]
-[ext_resource type="Script" path="res://scripts/end_screen.gd" id="1_ng7qx"]
+[ext_resource type="Script" uid="uid://dw845kndh0v1b" path="res://scripts/end_screen.gd" id="1_ng7qx"]
 [ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="2_3ukdq"]
 [ext_resource type="Shader" uid="uid://cx6wrnmmoro6x" path="res://scenes/pause_menu.gdshader" id="2_p1iid"]
 [ext_resource type="FontFile" uid="uid://dxg5l4vdlr1at" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_p1iid"]
@@ -34,7 +34,6 @@ offset_right = 968.0
 offset_bottom = 288.0
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 0
 offset_left = 216.0
 offset_top = 176.0
 offset_right = 944.0

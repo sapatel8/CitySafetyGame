@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://bjhy01lyuik7s"]
+[gd_scene load_steps=31 format=4 uid="uid://cniy0h3yghiq"]
 
 [ext_resource type="Script" uid="uid://j1qu1etjqpuo" path="res://scripts/game_manager.gd" id="1_7uttt"]
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_16pka"]
@@ -10,23 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://s8xoekb1nana" path="res://scenes/green_car.tscn" id="8_6qt4k"]
 [ext_resource type="PackedScene" uid="uid://bn2eqr1keuk47" path="res://scenes/red_car.tscn" id="9_fh4ka"]
 [ext_resource type="PackedScene" uid="uid://caj7l4y6i8baw" path="res://scenes/yellow_car.tscn" id="10_qewby"]
-[ext_resource type="PackedScene" path="res://scenes/world_boundary.tscn" id="11_fh4ka"]
+[ext_resource type="PackedScene" uid="uid://lis4noq0aeip" path="res://scenes/world_boundary.tscn" id="11_fh4ka"]
 [ext_resource type="PackedScene" uid="uid://d4xassdeglhd" path="res://scenes/killzone.tscn" id="12_qewby"]
-
-[sub_resource type="Animation" id="Animation_fh4ka"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(579, -260)]
-}
 
 [sub_resource type="Animation" id="Animation_6qt4k"]
 resource_name = "driving"
@@ -45,13 +30,7 @@ tracks/0/keys = {
 "values": [Vector2(579, -260), Vector2(580, -135), Vector2(333, -133), Vector2(334, 57), Vector2(146, 57), Vector2(145, -258)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_qewby"]
-_data = {
-&"RESET": SubResource("Animation_fh4ka"),
-&"driving": SubResource("Animation_6qt4k")
-}
-
-[sub_resource type="Animation" id="Animation_a114e"]
+[sub_resource type="Animation" id="Animation_fh4ka"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -63,7 +42,13 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(722, 55)]
+"values": [Vector2(579, -260)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qewby"]
+_data = {
+&"RESET": SubResource("Animation_fh4ka"),
+&"driving": SubResource("Animation_6qt4k")
 }
 
 [sub_resource type="Animation" id="Animation_e40mx"]
@@ -83,13 +68,7 @@ tracks/0/keys = {
 "values": [Vector2(722, 55), Vector2(355, 54), Vector2(355, -112), Vector2(553, -113), Vector2(554, -259)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_y1e0c"]
-_data = {
-&"RESET": SubResource("Animation_a114e"),
-&"driving": SubResource("Animation_e40mx")
-}
-
-[sub_resource type="Animation" id="Animation_got4s"]
+[sub_resource type="Animation" id="Animation_a114e"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -101,7 +80,13 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-100, 82)]
+"values": [Vector2(722, 55)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y1e0c"]
+_data = {
+&"RESET": SubResource("Animation_a114e"),
+&"driving": SubResource("Animation_e40mx")
 }
 
 [sub_resource type="Animation" id="Animation_bradm"]
@@ -119,6 +104,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(-100, 82), Vector2(151, 86), Vector2(152, -133), Vector2(-98, -130)]
+}
+
+[sub_resource type="Animation" id="Animation_got4s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-100, 82)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e40mx"]
