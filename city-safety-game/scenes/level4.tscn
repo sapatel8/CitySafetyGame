@@ -1598,6 +1598,9 @@ position = Vector2(696, 82)
 [node name="apple25" parent="Apples" instance=ExtResource("4_vxn4p")]
 position = Vector2(696, 65)
 
+[node name="apple2" parent="Apples" instance=ExtResource("4_vxn4p")]
+position = Vector2(-79, 194)
+
 [node name="Roadzones" type="Node" parent="."]
 
 [node name="Killzone3" parent="Roadzones" instance=ExtResource("8_5cjb5")]
@@ -1727,3 +1730,24 @@ libraries = {
 &"": SubResource("AnimationLibrary_sai06")
 }
 autoplay = "walking"
+
+[node name="StrangerAlert" type="Label" parent="."]
+z_index = 1
+offset_left = 23.0
+offset_top = 145.0
+offset_right = 107.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("3_5cjb5")
+theme_override_font_sizes/font_size = 8
+text = "Don't talk 
+to strangers!"
+
+[node name="homeText" type="Label" parent="."]
+z_index = 1
+offset_left = 584.0
+offset_top = 28.0
+offset_right = 670.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("3_5cjb5")
+theme_override_font_sizes/font_size = 8
+text = "Home at last!!"

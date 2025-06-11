@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cwxr3g3qvat20"]
+[gd_scene load_steps=6 format=3 uid="uid://cwxr3g3qvat20"]
 
 [ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="1_5p55f"]
 [ext_resource type="Script" uid="uid://wqxerjp6dbch" path="res://scripts/control.gd" id="1_r67kn"]
 [ext_resource type="FontFile" uid="uid://dxg5l4vdlr1at" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_brbbq"]
 [ext_resource type="Texture2D" uid="uid://cc16cy8foglt3" path="res://assets/8-bit-graphics-pixels-scene-with-police-office.jpg" id="4_8n18e"]
+[ext_resource type="Script" uid="uid://dmc6070r1gabm" path="res://scripts/audio_manager.gd" id="5_tjwpk"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -87,6 +88,9 @@ text = "Stranger
 Danger"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioManager" type="Node" parent="."]
+script = ExtResource("5_tjwpk")
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/OptionButton" to="." method="_on_option_button_pressed"]
