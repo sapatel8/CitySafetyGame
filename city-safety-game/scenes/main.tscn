@@ -1235,12 +1235,13 @@ theme_override_font_sizes/font_size = 8
 
 [node name="alert" type="Label" parent="Player/Camera2D2"]
 unique_name_in_owner = true
-offset_left = 19.0
-offset_top = 27.0
-offset_right = 142.0
-offset_bottom = 78.0
+offset_left = 17.0
+offset_top = 26.0
+offset_right = 140.0
+offset_bottom = 77.0
 theme_override_fonts/font = ExtResource("2_21xkr")
 theme_override_font_sizes/font_size = 8
+horizontal_alignment = 2
 vertical_alignment = 2
 
 [node name="PauseMenu" parent="Player/Camera2D2" instance=ExtResource("1_sugp2")]
@@ -1255,6 +1256,9 @@ offset_bottom = -26.0
 position = Vector2(247, -155)
 
 [node name="Apples" type="Node" parent="."]
+
+[node name="apple6" parent="Apples" instance=ExtResource("6_21xkr")]
+position = Vector2(0, 14)
 
 [node name="apple2" parent="Apples" instance=ExtResource("6_21xkr")]
 position = Vector2(132, 13)
@@ -1283,6 +1287,7 @@ tile_map_data = PackedByteArray("AAD8//L/AQABAAEAAAD8//P/AQABAAEAAAD8//T/AQABAAE
 tile_set = SubResource("TileSet_sugp2")
 
 [node name="worldBoundary" parent="." instance=ExtResource("8_tipki")]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="worldBoundary"]
 polygon = PackedVector2Array(358, 104, -124, 105, -128, -263, 154, -265, 152, -426, 361, -420, 358, 104, 320, 48, 320, -385, 176, -384, 176, -224, -96, -224, -96, 48, 319, 48)

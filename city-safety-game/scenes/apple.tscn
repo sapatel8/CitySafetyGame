@@ -1,7 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://dmmew0htxs5ah"]
+[gd_scene load_steps=20 format=3 uid="uid://dmmew0htxs5ah"]
 
 [ext_resource type="Texture2D" uid="uid://bnxd2lxlwnuqt" path="res://assets/Food/Apple.png" id="1_d0spr"]
 [ext_resource type="Script" uid="uid://5ryc0akafsah" path="res://scripts/apple.gd" id="1_ir1en"]
+[ext_resource type="AudioStream" uid="uid://b786ip4rx1vop" path="res://assets/sounds/crunch-munch-100545.mp3" id="3_3dmh2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3vu41"]
 atlas = ExtResource("1_d0spr")
@@ -117,6 +118,30 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("../AudioStreamPlayer2D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("../AudioStreamPlayer2D:stream_paused")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_d0spr"]
 resource_name = "pickup"
@@ -144,6 +169,30 @@ tracks/1/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AudioStreamPlayer2D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.133333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../AudioStreamPlayer2D:stream_paused")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fwpdb"]
 _data = {
@@ -170,5 +219,9 @@ root_node = NodePath("../CollisionShape2D")
 libraries = {
 &"": SubResource("AnimationLibrary_fwpdb")
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_3dmh2")
+volume_db = 6.16
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

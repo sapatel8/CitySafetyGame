@@ -1,9 +1,9 @@
 extends Node
-
-var score;
+#
+#var score;
 var paused = false
-var current_level := -1
-var level = 0
+#var current_level := -1
+#var level = 0
 
 
 @onready var score_label: Label = %"score label"
@@ -12,35 +12,35 @@ var level = 0
 @onready var timer: Timer = %Timer
 
 func _ready() -> void:
-	if score == null:
+	if Global.score == 0:
 		score_label.text = "0 points"
-	elif score == 1:
-		score_label.text = str(score) + " point"
-	elif score > 1:
-		score_label.text = str(score) + " points"
+	elif Global.score == 1:
+		score_label.text = str(Global.score) + " point"
+	elif Global.score > 1:
+		score_label.text = str(Global.score) + " points"
 
 func add_point(): 
-	if score == null:
-		score = 1;
+	Global.score += 1
+	if (Global.score <= 1):
+		score_label.text = str(Global.score) + " point"
 	else:
-		score += 1
-	if (score <= 1):
-		score_label.text = str(score) + " point"
-	else:
-		score_label.text = str(score) + " points"
+		score_label.text = str(Global.score) + " points"
 
 func stranger_alert():
 	timer.start()
 	alert.text += "Be careful of strangers!!\n"
 	
+	
 func car_alert():
 	timer.start()
 	alert.text += "Watch for cars!!\n"
+	Global.carHit += 1
 	
 func road_alert():
 	timer.start()
 	#while !timer.is_stopped():
 	alert.text += "Dont go into the road!!\n"
+	Global.road += 1
 	
 func _on_timer_timeout() -> void:
 	alert.text = ""
