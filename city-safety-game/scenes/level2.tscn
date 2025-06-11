@@ -1,10 +1,10 @@
-[gd_scene load_steps=12 format=4 uid="uid://dgyhvkrnthjci"]
+[gd_scene load_steps=12 format=4 uid="uid://c0tiekija2kgc"]
 
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="1_4038r"]
 [ext_resource type="Script" uid="uid://j1qu1etjqpuo" path="res://scripts/game_manager.gd" id="1_alqfr"]
 [ext_resource type="PackedScene" uid="uid://dmmew0htxs5ah" path="res://scenes/apple.tscn" id="2_2k3dv"]
 [ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="3_6ep0u"]
-[ext_resource type="PackedScene" uid="uid://bkpuayby5bh2e" path="res://scenes/next.tscn" id="3_4038r"]
+[ext_resource type="PackedScene" uid="uid://d1tyr5e67cwdc" path="res://scenes/next.tscn" id="3_4038r"]
 [ext_resource type="PackedScene" uid="uid://dtsn2o4ij2rnf" path="res://scenes/player.tscn" id="3_alqfr"]
 [ext_resource type="PackedScene" uid="uid://dogcyetcb3aeb" path="res://scenes/pause_menu.tscn" id="4_hrcei"]
 
