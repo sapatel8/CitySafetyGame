@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://bmjpg5ys3gk1x"]
+[gd_scene load_steps=7 format=3 uid="uid://bmjpg5ys3gk1x"]
 
 [ext_resource type="Script" uid="uid://ca50h4nfnhch1" path="res://scripts/options_screen.gd" id="1_8c6mt"]
 [ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="1_ffprp"]
 [ext_resource type="Texture2D" uid="uid://cc16cy8foglt3" path="res://assets/8-bit-graphics-pixels-scene-with-police-office.jpg" id="2_b7fgw"]
+[ext_resource type="Shader" uid="uid://cx6wrnmmoro6x" path="res://scenes/pause_menu.gdshader" id="3_rp22q"]
 [ext_resource type="FontFile" uid="uid://dxg5l4vdlr1at" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="4_rp22q"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2oknb"]
+shader = ExtResource("3_rp22q")
+shader_parameter/amount = 3.0
 
 [node name="options screen" type="Control"]
 layout_mode = 3
@@ -20,6 +25,12 @@ scale = Vector2(0.287698, 0.241071)
 texture = ExtResource("2_b7fgw")
 metadata/_edit_lock_ = true
 
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_2oknb")
+offset_top = -8.0
+offset_right = 1168.0
+offset_bottom = 640.0
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(130, 40)
 layout_mode = 1
@@ -28,10 +39,10 @@ anchor_left = 0.444
 anchor_top = 0.795
 anchor_right = 0.557
 anchor_bottom = 1.0
-offset_left = -31.488
-offset_top = -0.160034
-offset_right = 30.336
-offset_bottom = -93.0
+offset_left = 424.512
+offset_top = 36.84
+offset_right = 486.336
+offset_bottom = -56.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -42,19 +53,24 @@ theme_override_colors/font_hover_color = Color(0.80069, 0.549533, 0.146247, 1)
 theme_override_fonts/font = ExtResource("1_ffprp")
 theme_override_font_sizes/font_size = 16
 text = "Back"
+metadata/_edit_lock_ = true
 
 [node name="OptionsTitle" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -88.0
+offset_left = -128.0
 offset_top = 84.0
-offset_right = 96.0
-offset_bottom = 116.0
+offset_right = 137.0
+offset_bottom = 124.0
 grow_horizontal = 2
+theme_override_colors/font_color = Color(0.764706, 0.294118, 0.00784314, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = -3
 theme_override_fonts/font = ExtResource("4_rp22q")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 40
 text = "Options"
 
 [node name="ControlsText" type="Label" parent="."]
@@ -64,21 +80,23 @@ anchor_left = 0.389
 anchor_top = 0.233
 anchor_right = 0.519
 anchor_bottom = 0.506
-offset_left = -40.128
-offset_top = 51.016
-offset_right = -39.888
-offset_bottom = 4.112
+offset_left = -101.128
+offset_top = 57.516
+offset_right = -25.888
+offset_bottom = 120.612
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_ffprp")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 24
 text = "Move left: 
 
 Move right: 
 
 Move up: 
 
-Move down: "
+Move down: 
+
+Pause:"
 metadata/_edit_group_ = true
 
 [node name="gameplay control text" type="Label" parent="."]
@@ -88,19 +106,21 @@ anchor_left = 0.556
 anchor_top = 0.296
 anchor_right = 0.717
 anchor_bottom = 0.5
-offset_left = -40.512
-offset_top = 8.192
-offset_right = -39.9839
-offset_bottom = 12.0
+offset_left = -21.512
+offset_top = 16.192
+offset_right = 72.016
+offset_bottom = 124.0
 theme_override_fonts/font = ExtResource("1_ffprp")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 24
 text = "Left arrow / a
 
 Right arrow / d
 
 Up arrow / w
 
-Down arrow / s"
+Down arrow / s
+
+Esc"
 metadata/_edit_group_ = true
 
 [connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

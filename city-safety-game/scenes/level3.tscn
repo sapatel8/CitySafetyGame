@@ -13,6 +13,21 @@
 [ext_resource type="PackedScene" uid="uid://lis4noq0aeip" path="res://scenes/world_boundary.tscn" id="11_fh4ka"]
 [ext_resource type="PackedScene" uid="uid://d4xassdeglhd" path="res://scenes/killzone.tscn" id="12_qewby"]
 
+[sub_resource type="Animation" id="Animation_fh4ka"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(579, -260)]
+}
+
 [sub_resource type="Animation" id="Animation_6qt4k"]
 resource_name = "driving"
 length = 5.5
@@ -30,7 +45,13 @@ tracks/0/keys = {
 "values": [Vector2(579, -260), Vector2(580, -135), Vector2(333, -133), Vector2(334, 57), Vector2(146, 57), Vector2(145, -258)]
 }
 
-[sub_resource type="Animation" id="Animation_fh4ka"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qewby"]
+_data = {
+&"RESET": SubResource("Animation_fh4ka"),
+&"driving": SubResource("Animation_6qt4k")
+}
+
+[sub_resource type="Animation" id="Animation_a114e"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -42,13 +63,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(579, -260)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_qewby"]
-_data = {
-&"RESET": SubResource("Animation_fh4ka"),
-&"driving": SubResource("Animation_6qt4k")
+"values": [Vector2(722, 55)]
 }
 
 [sub_resource type="Animation" id="Animation_e40mx"]
@@ -68,7 +83,13 @@ tracks/0/keys = {
 "values": [Vector2(722, 55), Vector2(355, 54), Vector2(355, -112), Vector2(553, -113), Vector2(554, -259)]
 }
 
-[sub_resource type="Animation" id="Animation_a114e"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y1e0c"]
+_data = {
+&"RESET": SubResource("Animation_a114e"),
+&"driving": SubResource("Animation_e40mx")
+}
+
+[sub_resource type="Animation" id="Animation_got4s"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -80,13 +101,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(722, 55)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_y1e0c"]
-_data = {
-&"RESET": SubResource("Animation_a114e"),
-&"driving": SubResource("Animation_e40mx")
+"values": [Vector2(-100, 82)]
 }
 
 [sub_resource type="Animation" id="Animation_bradm"]
@@ -104,21 +119,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(-100, 82), Vector2(151, 86), Vector2(152, -133), Vector2(-98, -130)]
-}
-
-[sub_resource type="Animation" id="Animation_got4s"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-100, 82)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e40mx"]
@@ -1520,3 +1520,16 @@ shape = SubResource("RectangleShape2D_a114e")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RoadZones/Killzone3"]
 polygon = PackedVector2Array(366, -271, 365, -143, 382, -142, 382, -97, 365, -99, 366, 7, 322, 7, 322, -100, 158, -100, 157, -91, 114, -90, 114, -101, -114, -98, -113, -144, 115, -143, 114, -273, 157, -273, 158, -143, 320, -141, 323, -277)
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+offset_left = 43.0
+offset_top = 20.0
+offset_right = 107.0
+offset_bottom = 39.0
+theme_override_fonts/font = ExtResource("3_b72m1")
+theme_override_font_sizes/font_size = 8
+text = "Watch out 
+for cars!!"
+
+[connection signal="timeout" from="GameManager/Timer" to="GameManager" method="_on_timer_timeout"]
