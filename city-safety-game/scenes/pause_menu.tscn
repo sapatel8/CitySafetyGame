@@ -35,12 +35,14 @@ layout_mode = 2
 
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.862745, 0.619608, 0.27451, 1)
 theme_override_fonts/font = ExtResource("1_n87rw")
 theme_override_font_sizes/font_size = 16
 text = "Resume"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.862745, 0.619608, 0.27451, 1)
 theme_override_fonts/font = ExtResource("1_n87rw")
 theme_override_font_sizes/font_size = 16
 text = "Quit"

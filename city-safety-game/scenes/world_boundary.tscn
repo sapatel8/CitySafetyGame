@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://lis4noq0aeip"]
+
+[ext_resource type="Script" uid="uid://cj50hhcjhdt5s" path="res://scripts/world_boundary.gd" id="1_viule"]
+
+[node name="worldBoundary" type="Area2D"]
+script = ExtResource("1_viule")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

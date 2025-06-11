@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmjpg5ys3gk1x"]
+[gd_scene load_steps=5 format=3 uid="uid://bmjpg5ys3gk1x"]
 
 [ext_resource type="Script" uid="uid://ca50h4nfnhch1" path="res://scripts/options_screen.gd" id="1_8c6mt"]
 [ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="1_ffprp"]
+[ext_resource type="Texture2D" uid="uid://cc16cy8foglt3" path="res://assets/8-bit-graphics-pixels-scene-with-police-office.jpg" id="2_b7fgw"]
+[ext_resource type="FontFile" uid="uid://dxg5l4vdlr1at" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="4_rp22q"]
 
 [node name="options screen" type="Control"]
 layout_mode = 3
@@ -11,6 +13,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8c6mt")
+
+[node name="8-bit-graphics-pixels-scene-with-police-office" type="Sprite2D" parent="."]
+position = Vector2(580, 316)
+scale = Vector2(0.287698, 0.241071)
+texture = ExtResource("2_b7fgw")
+metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(130, 40)
@@ -45,7 +53,7 @@ offset_top = 84.0
 offset_right = 96.0
 offset_bottom = 116.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("1_ffprp")
+theme_override_fonts/font = ExtResource("4_rp22q")
 theme_override_font_sizes/font_size = 32
 text = "Options"
 
@@ -56,10 +64,10 @@ anchor_left = 0.389
 anchor_top = 0.233
 anchor_right = 0.519
 anchor_bottom = 0.506
-offset_left = -0.128021
-offset_top = 46.016
-offset_right = 0.111938
-offset_bottom = -0.888031
+offset_left = -40.128
+offset_top = 51.016
+offset_right = -39.888
+offset_bottom = 4.112
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_ffprp")
@@ -71,18 +79,19 @@ Move right:
 Move up: 
 
 Move down: "
+metadata/_edit_group_ = true
 
-[node name="Label" type="Label" parent="."]
+[node name="gameplay control text" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.556
 anchor_top = 0.296
 anchor_right = 0.717
 anchor_bottom = 0.5
-offset_left = -0.512085
-offset_top = 3.192
-offset_right = 0.0159912
-offset_bottom = 7.0
+offset_left = -40.512
+offset_top = 8.192
+offset_right = -39.9839
+offset_bottom = 12.0
 theme_override_fonts/font = ExtResource("1_ffprp")
 theme_override_font_sizes/font_size = 16
 text = "Left arrow / a
@@ -92,5 +101,6 @@ Right arrow / d
 Up arrow / w
 
 Down arrow / s"
+metadata/_edit_group_ = true
 
 [connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
