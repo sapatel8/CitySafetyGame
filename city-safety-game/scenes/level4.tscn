@@ -1,8 +1,11 @@
-[gd_scene load_steps=9 format=4 uid="uid://lhd0wf1lc4tt"]
+[gd_scene load_steps=12 format=4 uid="uid://cb0nipb6i6xa7"]
 
 [ext_resource type="PackedScene" uid="uid://dtsn2o4ij2rnf" path="res://scenes/player.tscn" id="1_u23xw"]
+[ext_resource type="Script" uid="uid://j1qu1etjqpuo" path="res://scripts/game_manager.gd" id="1_vxn4p"]
 [ext_resource type="Texture2D" uid="uid://dfwbi1t108lr5" path="res://assets/City Layout/Tilemap/tilemap_packed.png" id="2_kq3r6"]
-[ext_resource type="PackedScene" uid="uid://d1tyr5e67cwdc" path="res://scenes/next.tscn" id="3_im88e"]
+[ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="3_5cjb5"]
+[ext_resource type="PackedScene" uid="uid://bkpuayby5bh2e" path="res://scenes/next.tscn" id="3_im88e"]
+[ext_resource type="PackedScene" uid="uid://dogcyetcb3aeb" path="res://scenes/pause_menu.tscn" id="4_q6sfj"]
 [ext_resource type="PackedScene" uid="uid://dmmew0htxs5ah" path="res://scenes/apple.tscn" id="4_vxn4p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
@@ -1207,31 +1210,44 @@ sources/1 = SubResource("TileSetAtlasSource_0wfyh")
 
 [node name="Level4" type="Node2D"]
 
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_vxn4p")
+
+[node name="Timer" type="Timer" parent="GameManager"]
+
 [node name="Player" parent="." instance=ExtResource("1_u23xw")]
 z_index = 5
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Camera2D2" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
 
-[node name="ScoreLabel" type="Label" parent="Player"]
-z_index = 1
+[node name="score label" type="Label" parent="Player/Camera2D2"]
+unique_name_in_owner = true
 offset_left = -141.0
-offset_top = 39.0
-offset_right = -80.0
-offset_bottom = 61.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_font_sizes/font_size = 15
-text = "0 points"
+offset_top = -78.0
+offset_right = -88.0
+offset_bottom = -70.0
+theme_override_fonts/font = ExtResource("3_5cjb5")
+theme_override_font_sizes/font_size = 8
 
-[node name="Alert" type="Label" parent="Player"]
-z_index = 1
-offset_left = -140.0
-offset_top = 59.0
-offset_right = -84.0
-offset_bottom = 81.0
-theme_override_font_sizes/font_size = 15
-text = "Alert: "
+[node name="alert" type="Label" parent="Player/Camera2D2"]
+unique_name_in_owner = true
+offset_left = 20.0
+offset_top = 28.0
+offset_right = 143.0
+offset_bottom = 79.0
+theme_override_fonts/font = ExtResource("3_5cjb5")
+theme_override_font_sizes/font_size = 8
+vertical_alignment = 2
+
+[node name="PauseMenu" parent="Player/Camera2D2" instance=ExtResource("4_q6sfj")]
+unique_name_in_owner = true
+visible = false
+offset_left = -59.0
+offset_top = -26.0
+offset_right = -59.0
+offset_bottom = -26.0
 
 [node name="Tile Map" type="Node" parent="."]
 

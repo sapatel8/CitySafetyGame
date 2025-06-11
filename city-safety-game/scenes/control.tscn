@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cwxr3g3qvat20"]
+[gd_scene load_steps=5 format=3 uid="uid://cwxr3g3qvat20"]
 
 [ext_resource type="FontFile" uid="uid://doecikw21csos" path="res://assets/fonts/PixelOperator8.ttf" id="1_5p55f"]
 [ext_resource type="Script" uid="uid://wqxerjp6dbch" path="res://scripts/control.gd" id="1_r67kn"]
+[ext_resource type="FontFile" uid="uid://dxg5l4vdlr1at" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_brbbq"]
+[ext_resource type="Texture2D" uid="uid://cc16cy8foglt3" path="res://assets/8-bit-graphics-pixels-scene-with-police-office.jpg" id="4_8n18e"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -15,6 +17,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_r67kn")
 
+[node name="8-bit-graphics-pixels-scene-with-police-office" type="Sprite2D" parent="."]
+position = Vector2(580, 316)
+scale = Vector2(0.287698, 0.241071)
+texture = ExtResource("4_8n18e")
+metadata/_edit_lock_ = true
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(130, 60)
 layout_mode = 1
@@ -23,17 +31,17 @@ anchor_left = 0.226
 anchor_top = 0.691
 anchor_right = 0.722
 anchor_bottom = 1.0
-offset_left = 187.648
-offset_top = 2.23196
-offset_right = -127.744
-offset_bottom = -58.0
+offset_left = 619.648
+offset_top = 24.232
+offset_right = 304.256
+offset_bottom = -36.0
 theme_override_constants/separation = 4
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(50, 40)
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_colors/font_hover_color = Color(0.80069, 0.549533, 0.146247, 1)
+theme_override_colors/font_hover_color = Color(0.862745, 0.619608, 0.27451, 1)
 theme_override_fonts/font = ExtResource("1_5p55f")
 theme_override_font_sizes/font_size = 32
 text = "Start"
@@ -42,7 +50,7 @@ text = "Start"
 custom_minimum_size = Vector2(50, 40)
 layout_mode = 2
 size_flags_vertical = 4
-theme_override_colors/font_hover_color = Color(0.80069, 0.549533, 0.146247, 1)
+theme_override_colors/font_hover_color = Color(0.862745, 0.619608, 0.27451, 1)
 theme_override_fonts/font = ExtResource("1_5p55f")
 theme_override_font_sizes/font_size = 32
 text = "Options"
@@ -50,7 +58,7 @@ text = "Options"
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-theme_override_colors/font_hover_color = Color(0.80069, 0.549533, 0.146247, 1)
+theme_override_colors/font_hover_color = Color(0.862745, 0.619608, 0.27451, 1)
 theme_override_fonts/font = ExtResource("1_5p55f")
 theme_override_font_sizes/font_size = 32
 text = "Quit"
@@ -63,14 +71,17 @@ anchor_top = 0.111
 anchor_right = 0.889
 anchor_bottom = 0.506
 offset_left = 151.488
-offset_top = 40.072
+offset_top = 0.0719986
 offset_right = -96.1281
-offset_bottom = 16.112
+offset_bottom = -23.888
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.364706, 0, 0, 1)
+theme_override_colors/font_color = Color(0.764706, 0.294118, 0.00784314, 1)
 theme_override_colors/font_shadow_color = Color(0.105882, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_5p55f")
+theme_override_constants/line_spacing = 22
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = -4
+theme_override_fonts/font = ExtResource("3_brbbq")
 theme_override_font_sizes/font_size = 88
 text = "Stranger
 Danger"

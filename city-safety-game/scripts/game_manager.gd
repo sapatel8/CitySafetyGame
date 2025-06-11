@@ -1,6 +1,6 @@
 extends Node
 
-var score = 0
+var score;
 var paused = false
 var current_level := -1
 var level = 0
@@ -9,8 +9,19 @@ var level = 0
 @onready var alert: Label = %alert
 @onready var pause_menu: Control = %PauseMenu
 
+func _ready() -> void:
+	if score == null:
+		score_label.text = "0 points"
+	elif score == 1:
+		score_label.text = str(score) + " point"
+	elif score > 1:
+		score_label.text = str(score) + " points"
+
 func add_point(): 
-	score += 1
+	if score == null:
+		score = 1;
+	else:
+		score += 1
 	if (score <= 1):
 		score_label.text = str(score) + " point"
 	else:
