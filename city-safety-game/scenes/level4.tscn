@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dogcyetcb3aeb" path="res://scenes/pause_menu.tscn" id="4_q6sfj"]
 [ext_resource type="PackedScene" uid="uid://dmmew0htxs5ah" path="res://scenes/apple.tscn" id="4_vxn4p"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u23xw"]
 texture = ExtResource("2_kq3r6")
 0:0/0 = 0
 1:0/0 = 0
@@ -714,9 +714,9 @@ texture = ExtResource("2_kq3r6")
 
 [sub_resource type="TileSet" id="TileSet_sugp2"]
 physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_sugp2")
+sources/1 = SubResource("TileSetAtlasSource_u23xw")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wfyh"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kq3r6"]
 texture = ExtResource("2_kq3r6")
 0:0/0 = 0
 1:0/0 = 0
@@ -1206,7 +1206,7 @@ texture = ExtResource("2_kq3r6")
 26:17/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_jyhfs"]
-sources/1 = SubResource("TileSetAtlasSource_0wfyh")
+sources/1 = SubResource("TileSetAtlasSource_kq3r6")
 
 [node name="Level4" type="Node2D"]
 
