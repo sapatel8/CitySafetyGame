@@ -1211,7 +1211,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_sugp2")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d3jkd"]
-size = Vector2(44, 249.25)
+size = Vector2(44, 244.312)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_conm7"]
 size = Vector2(45, 63)
@@ -1245,7 +1245,6 @@ position = Vector2(13, -8)
 zoom = Vector2(4, 4)
 
 [node name="score label" type="Label" parent="Player/Camera2D2"]
-unique_name_in_owner = true
 offset_left = -141.0
 offset_top = -78.0
 offset_right = -88.0
@@ -1320,13 +1319,13 @@ metadata/_edit_lock_ = true
 [node name="Killzone" parent="RoadZones" instance=ExtResource("9_conm7")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RoadZones/Killzone"]
-position = Vector2(136, -130.75)
+position = Vector2(136, -131.688)
 shape = SubResource("RectangleShape2D_d3jkd")
 
 [node name="Killzone2" parent="RoadZones" instance=ExtResource("9_conm7")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RoadZones/Killzone2"]
-position = Vector2(345, -129.625)
+position = Vector2(345, -131.156)
 shape = SubResource("RectangleShape2D_d3jkd")
 
 [node name="Killzone3" parent="RoadZones" instance=ExtResource("9_conm7")]

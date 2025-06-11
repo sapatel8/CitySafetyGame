@@ -1476,6 +1476,7 @@ unique_name_in_owner = true
 script = ExtResource("1_vxn4p")
 
 [node name="Timer" type="Timer" parent="GameManager"]
+unique_name_in_owner = true
 
 [node name="Player" parent="." instance=ExtResource("1_u23xw")]
 z_index = 5
