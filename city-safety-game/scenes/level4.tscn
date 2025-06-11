@@ -1541,6 +1541,7 @@ offset_right = -88.0
 offset_bottom = -70.0
 theme_override_fonts/font = ExtResource("3_5cjb5")
 theme_override_font_sizes/font_size = 8
+horizontal_alignment = 2
 
 [node name="alert" type="Label" parent="Player/Camera2D2"]
 unique_name_in_owner = true
