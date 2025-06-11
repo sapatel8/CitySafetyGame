@@ -1273,6 +1273,7 @@ z_index = 5
 zoom = Vector2(4, 4)
 
 [node name="score label" type="Label" parent="Player/Camera2D2"]
+unique_name_in_owner = true
 offset_left = -141.0
 offset_top = -78.0
 offset_right = -88.0
